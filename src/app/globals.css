@@ -169,7 +169,7 @@ body {
 }
 
 .app-c {
-  padding: 0.9rem 1.4rem 0rem 1.4rem;
+  padding: 0.9rem 1.4rem 9rem 1.4rem;
 }
 
 .widget {
@@ -181,6 +181,10 @@ body {
     display: grid;
     grid-template-columns: 0.23fr 1fr;
     grid-template-areas: "nav appContent";
+  }
+
+  .app-c {
+    padding: 0.9rem 1.4rem 2rem 1.4rem;
   }
 }
 
