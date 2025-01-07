@@ -1,0 +1,87 @@
+.loginSection {
+  background-color: #fff;
+  max-width: 81.5rem;
+  margin: 0 auto;
+}
+
+.brandLogo {
+  width: clamp(10.2rem, 21.1vw, 17.2rem);
+  height: clamp(10.1rem, 21.1vw, 17rem);
+  display: block;
+  margin: 0 auto;
+}
+
+.logInForm {
+  display: grid;
+  gap: 1.6rem;
+  width: clamp(20rem, 89.6%, 50.8rem);
+
+  max-width: 50.8rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.loginHeader {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 2.926rem;
+  text-align: left;
+  /* text-underline-position: from-font;
+            text-decoration-skip-ink: none; */
+}
+
+.inputContainer {
+  display: grid;
+  gap: clamp(2rem, 2vw, 2.1rem);
+}
+
+.formInput {
+  width: 100%;
+  height: clamp(5.3rem, 10.3vw, 7rem);
+  border: 0.1rem solid #000000;
+  border-radius: 1.6rem;
+  font-size: 1.6rem;
+  padding: clamp(1.5rem, 2vw, 2.6rem);
+}
+
+.formInputt:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+.formInput::placeholder {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: var(--ex-small-fw);
+}
+
+.loginButton {
+  width: 100%;
+  height: clamp(4.8rem, 5.3vw, 7rem);
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+  color: var(--primary-white-color, #fff);
+  background-color: var(--light-blue, blue);
+  font-size: var(--m-medium-text-size);
+  font-weight: var(--small-fw);
+}
+
+@media (min-width: 1000px) {
+  .loginSection {
+    border-radius: 0px 20px 20px 0px;
+    min-height: 81.2rem;
+    max-height: 96.7rem;
+  }
+
+  .logInForm {
+    gap: 1.6rem;
+    margin: 0 auto;
+  }
+
+  .loginHeader {
+    display: none;
+  }
+
+  .formInput {
+    /* padding: 2.3rem 3.3rem 2.6rem 1.6rem; */
+    padding: 1.6 2rem;
+  }
+}

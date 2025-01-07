@@ -1,0 +1,27 @@
+.profileFeedOptionsContainer {
+  border: 0.05rem solid #dadada;
+  padding: 1rem 1.7rem;
+  margin-bottom: clamp(1rem, 1vw, 2.1rem);
+}
+
+.profileFeedList {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profileFeedBtn {
+  /* font-family: Montserrat; */
+  font-size: clamp(1rem, 1vw, 1.8rem);
+  font-weight: 400;
+  font-weight: 500;
+  line-height: clamp(1.219rem, 1.219vw, 2.194rem);
+  letter-spacing: 0.02em;
+
+  color: #000000cc;
+  color: #000000;
+}
+
+/* .profileFeedBtn:focus {
+  border-bottom: 0.1rem solid #000000;
+  margin-top: clamp(0.2rem, 0.2vw, 1.4rem);
+} */

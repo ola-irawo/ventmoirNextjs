@@ -1,0 +1,63 @@
+/* .profileCardSection {
+} */
+
+.profileCardHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profileCardUserDetails {
+  display: flex;
+  align-items: center;
+}
+
+.profileAvatarContainer {
+  border: 0.1rem solid;
+  width: clamp(5.2rem, 5.2vw, 11.4rem);
+  height: clamp(5.2rem, 5.2vw, 11.4rem);
+  border-radius: 6rem;
+}
+
+.usernameAndDateJoinedContainer {
+  margin-left: clamp(0.2rem, 0.5vw, 1rem);
+  display: grid;
+  gap: 0.9rem;
+}
+
+/* .dateJoined {
+ 
+} */
+
+.editProfileBtn {
+  width: clamp(8.7rem, 8.7vw, 14.4rem);
+  height: clamp(3.1rem, 3.1vw, 5rem);
+  padding: 8px 10px 8px 10px;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #dadada;
+  border: 0.1rem solid black;
+  font-size: clamp(1.2rem, 1.2vw, 1.8rem);
+  font-weight: clamp(400, 400, 500);
+  line-height: clamp(1.463rem, 1.463vw, 2.194rem);
+  letter-spacing: 0.02em;
+}
+
+.userBioContainer {
+  margin-top: clamp(1.2rem, 1.2vw, 2.1rem);
+}
+
+.userBio {
+  font-size: clamp(1.2rem, 1.2vw, 1.8rem);
+  font-weight: 300;
+  line-height: clamp(1.463rem, 1.463vw, 2.194rem);
+  letter-spacing: 0.02em;
+  color: #000;
+  max-width: 76.9rem;
+  padding-bottom: clamp(1.8rem, 1.8vw, 3.3rem);
+}
+
+@media (min-width: 1000px) {
+  .editProfileBtn {
+    /* padding: 14px 20px 14px 20px; */
+    border-radius: 1.2rem;
+  }
+}

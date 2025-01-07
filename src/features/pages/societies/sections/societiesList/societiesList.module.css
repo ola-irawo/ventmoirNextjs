@@ -1,0 +1,51 @@
+.societiesList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.societiesHeader {
+  font-size: clamp(1.8rem, 1.8vw, 2.8rem);
+  font-weight: var(--small-fw);
+  line-height: clamp(2.194rem, 2.194vw, 3.413rem);
+  margin-top: clamp(4.4rem, 4.4vw, 3.6rem);
+  font-family: Montserrat;
+}
+
+.societyItem {
+  display: grid;
+  gap: clamp(0.7rem, 0.7vw, 2.2rem);
+  width: clamp(10rem, 18vw, 33.7rem);
+  margin-top: clamp(1.4rem, 1.4vw, 5.6rem);
+}
+
+.societyImg {
+  width: 100%;
+  height: clamp(7.2rem, 7.2vw, 19.9rem);
+  height: 100%;
+  border-radius: clamp(1rem, 1vw, 2rem);
+}
+
+.societyInfoContainer {
+  text-align: center;
+}
+
+.societyName {
+  font-family: Montserrat;
+  font-size: clamp(1.6rem, 1.6vw, 3rem);
+  font-weight: 500;
+  line-height: clamp(1.95rem, 1.95vw), 3.657rem;
+  font-family: Montserrat;
+  color: #000000e5;
+}
+
+.societyMember {
+  font-family: Montserrat;
+  font-size: clamp(1.2rem, 1.2vw, 2rem);
+  font-weight: 400;
+  line-height: clamp(1.463rem, 1.463vw, 2.438rem);
+  color: #000000b2;
+}
+
+.otherSociety {
+  margin-top: clamp(3.3rem, 3.3rem, 6.9rem);
+}

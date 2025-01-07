@@ -1,0 +1,56 @@
+.userPostCardContainer {
+  max-width: 79.6rem;
+  border-radius: 1.2rem;
+  border: 0.05rem solid #dadada;
+  background-color: #fff;
+  padding: 1.4rem 0.9rem 0rem 0.8rem;
+}
+
+.userPostHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.4rem;
+}
+
+.userPostDetails {
+  display: flex;
+}
+
+.userProfileAvatarContainer {
+  width: clamp(4.4rem, 4.4vw, 9rem);
+  height: clamp(4.4rem, 4.4vw, 9rem);
+  /* padding: 6.77px 1.8px 0px 1.78px; */
+  border-radius: 6rem;
+  border: 0.1rem solid black;
+}
+
+.usernameAndTimeContainer {
+  margin-left: 1rem;
+  margin-top: 0.2rem;
+}
+
+.postTime {
+  margin-top: clamp(0.5rem, 0.5vw, 0.9rem);
+  /* margin-top: clamp(0.8rem, 0.8vw, 0.9rem); */
+}
+
+.userPostOptions {
+  align-self: baseline;
+}
+
+.userPostOptions svg {
+  width: 0.4rem;
+  height: 2.1rem;
+}
+
+.userPost {
+  min-height: 3rem;
+}
+
+.postInteractionContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.7rem;
+  border-top: 0.04rem solid #dadadab2;
+  height: 5.2rem;
+}

@@ -1,0 +1,81 @@
+.navContainer {
+  border: 0.1rem solid black;
+  position: fixed;
+  bottom: -1.8rem;
+  grid-area: nav;
+  width: 100%;
+  border-top: 0.05rem solid #0000001a;
+  height: 8.8rem;
+  background-color: var(--primary-white-color, #fff);
+  padding: 1.4rem 1.2rem 2.2rem 1.4rem;
+  z-index: 1;
+}
+
+.brandLogo {
+  display: none;
+}
+
+.navList {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navLink {
+  display: grid;
+  gap: 0.4rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.navLink:hover svg {
+  fill: #000;
+}
+
+.navName:hover {
+  color: blue;
+}
+
+@media (min-width: 768px) {
+  .navContainer {
+    bottom: unset;
+    width: unset;
+    min-height: 100vh;
+    padding-top: 2rem;
+  }
+
+  .brandLogo {
+    display: block;
+    margin: 0 auto;
+    width: clamp(5.3rem, 5vw, 9rem);
+    height: clamp(5.3rem, 5vw, 8rem);
+    cursor: pointer;
+  }
+
+  .navList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: clamp(10rem, 15vw, 31.1rem);
+    height: 50rem;
+    align-items: center;
+  }
+
+  .navLink {
+    width: clamp(12rem, 12vw, 18.7rem);
+  }
+}
+
+@media (min-width: 1200px) {
+  .navList {
+    width: clamp(20rem, 20vw, 31.1rem);
+  }
+
+  .navLink {
+    justify-content: unset;
+    display: flex;
+  }
+
+  .navName {
+    margin-left: 1.8rem;
+  }
+}

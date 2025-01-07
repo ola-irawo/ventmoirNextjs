@@ -1,0 +1,49 @@
+.authImg {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .authLayoutContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 4rem 2rem;
+    background-image: url("https://img.freepik.com/free-photo/html-css-collage-concept_23-2150061955.jpg?t=st=1735864035~exp=1735867635~hmac=c8d49e5b69dcaa8945f59601b7948f844d3eca6ff2152b863bef458e39528d74&w=740");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .authImg {
+    display: block;
+    max-width: 81.5rem;
+    max-height: 96.7rem;
+    border-radius: 20px 0px 0px 20px;
+    background-color: #d89785;
+  }
+
+  .signupImg {
+    width: clamp(24.7rem, 30.8vw, 54.4rem);
+    height: clamp(19.6rem, 24.1vw, 39.518rem);
+    margin: 0 auto;
+    display: block;
+    margin-top: 10rem;
+  }
+
+  .imgHead {
+    height: 4.6rem;
+    font-size: clamp(2.2rem, 2.3vw, 3.8rem);
+    font-weight: var(--small-fw);
+    line-height: clamp(2.5rem, 2.5vw, 4.6rem);
+    color: var(--primary-white-color, #fff);
+    text-align: center;
+    margin-top: 3.4rem;
+  }
+
+  .imgText {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    text-align: center;
+    color: var(--primary-white-color, #fff);
+  }
+}
