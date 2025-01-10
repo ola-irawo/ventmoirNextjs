@@ -1,13 +1,17 @@
 .topbarContainer {
-  border: 0.1rem solid black;
   padding: 1.5rem 1.4rem 1.3rem 1.4rem;
   border-bottom: 0.05rem solid #0000001a;
   margin-bottom: clamp(0.6rem, 0.6vw, 1.1rem);
+  background-color: #fff;
 }
 
 .brandLogo {
   margin: 0 auto;
   display: block;
+}
+
+.hiddenOnMobile {
+  display: none;
 }
 
 .topbarContent {
@@ -16,22 +20,22 @@
   justify-content: space-between;
 }
 
-.profileLinkContainer {
-  width: 34px;
-  height: 34px;
-  padding: 7.56px 3.78px 0px 3.78px;
-  gap: 0px;
+.profileLink {
+  display: block;
+  width: clamp(3.4rem, 3.4vw, 4.2rem);
+  height: clamp(3.4rem, 3.4vw, 4rem);
   border-radius: 4rem;
-  opacity: 0px;
   border: 0.1rem solid black;
 }
 
 .searchContainer {
   width: clamp(24.7rem, 30vw, 41.7rem);
+  width: clamp(20rem, 30vw, 41.7rem);
   height: clamp(3.4rem, 3.4vw, 4.6rem);
   padding: 10px 22px 9px 6px;
   border-radius: 0.5rem;
   border: 0.05rem solid #dadadacc;
+  margin: 0 1.5rem;
 }
 
 .searchWrapper {
@@ -56,11 +60,50 @@
   justify-content: center;
 }
 
+@media (min-width: 768px) {
+  .hiddenOnMobile {
+    display: block;
+  }
+
+  .hiddenOnDesktop {
+    display: none;
+  }
+
+  .topbarContainer {
+    padding-top: 2rem;
+  }
+
+  .pathNameContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .goBackBtn {
+    width: clamp(2.2rem, 2.2vw, 2.7rem);
+    margin-right: clamp(0.6rem, 0.6rem, 1rem);
+  }
+
+  .pathName {
+    font-size: clamp(2.6rem, 2.6rem, 3rem);
+    font-weight: 500;
+    font-family: Poppins;
+    line-height: 4.5rem;
+  }
+
+  .profileandNotificationContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 9.8rem;
+    gap: clamp(1rem, 1vw, 2.6rem);
+  }
+}
+
 @media (min-width: 1000px) {
   .topbarContainer {
     padding: 1.8rem 5.6rem 2.2rem 2.6rem;
     border-bottom: 0.05rem solid #dadada80;
     border-width: 0px 0px 1px 1px;
+    padding-top: 2rem;
   }
 
   .searchContainer {
