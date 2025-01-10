@@ -1,0 +1,61 @@
+.logoutContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(0, 0, 0, 0.1);
+}
+
+.logoutWrapper {
+  width: clamp(30rem, 30vw, 67.4rem);
+  height: clamp(20rem, 20vw, 50.7rem);
+  /* width: clamp(30rem, 30vw, 49.7rem);
+  height: clamp(20rem, 20vw, 22.8rem); */
+  gap: 60px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  margin-top: 10rem;
+  border-radius: 2rem;
+}
+
+.closeLogoutModal {
+  width: clamp(1.4rem, 1.4vw, 1.954rem);
+  height: clamp(1.8rem, 1.8vw, 2.1rem);
+  margin-top: clamp(1.6rem, 1.6vw, 2.4rem);
+  margin-left: clamp(1.2rem, 1.2vw, 4.7rem);
+}
+
+.logoutText {
+  font-family: Montserrat;
+  font-size: clamp(1.8rem, 1.8vw, 3.8rem);
+  font-weight: 500;
+  line-height: clamp(2.194rem, 2.194vw, 4.632rem);
+  text-align: center;
+  margin-top: clamp(3rem, 3vw, 15.5rem);
+}
+
+.logoutBtnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: clamp(2rem, 2vw, 6rem);
+}
+
+.logoutBtn {
+  width: clamp(8rem, 8vw, 12.6rem);
+  height: clamp(4rem, 4vw, 7.6rem);
+  text-align: center;
+  border-radius: 1.2rem;
+  border: 0.1rem solid #00000080;
+  font-family: Montserrat;
+  font-size: clamp(1.8rem, 1.8vw, 2.8rem);
+  font-weight: 500;
+  line-height: clamp(2.194rem, 2.194vw, 3.413rem);
+}
+
+.logoutBtn:last-of-type {
+  background-color: #407bff;
+  color: #fff;
+  margin-left: clamp(2rem, 2vw, 4rem);
+}
