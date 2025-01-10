@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styles from "./postOptions.module.css"
 
 const PostOptions = ({setShowPostOptions}) => {
-    const [options, setOptions] = useState(null)
+    const [options, setOptions] = useState(null) // might not be necessary
 
     const postOptions = [
         {label: `Copy Link`, action:  () =>  console.log("link")},
@@ -69,17 +69,17 @@ const PostOptions = ({setShowPostOptions}) => {
   return (
     <aside className={styles.postOptionsContainer} onClick={() => setShowPostOptions(false)}>
         <div className={styles.postOptionsWrapper}>
-            <ul className={styles.postOptionList}>
-                {
-                    postOptions.map((option, index) => {
-                        return <li key={index}>
-                            <button className={styles.optionLabel} onClick={() => handleOptionClick(option)}>
-                                {option.label}
-                            </button>
-                        </li>
-                    })
-                }
-            </ul>
+          <ul className={styles.postOptionList}>
+            {
+              postOptions.map((option, index) => {
+                  return <li key={index}>
+                      <button className={styles.optionLabel} onClick={() => handleOptionClick(option)}>
+                          {option.label}
+                      </button>
+                  </li>
+              })
+            }
+          </ul>
       </div>
 
     </aside>

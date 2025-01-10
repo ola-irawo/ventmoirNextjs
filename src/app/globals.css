@@ -156,6 +156,7 @@ code {
 
 body {
   max-width: 144rem;
+  background-color: #f6f6f6;
 }
 
 .app-wrapper {
@@ -196,7 +197,7 @@ body {
   .app-c {
     display: grid;
     grid-template-columns: 1fr 20rem;
-    background-color: #dadada;
+    background-color: #f6f6f6;
     padding: 1.8rem 0rem 0rem 2.6rem;
   }
 

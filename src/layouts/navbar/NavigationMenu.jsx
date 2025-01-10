@@ -8,37 +8,48 @@ import NotificationIcon from "./navIcons/NotificationIcon"
 import BookmarkIcon from "./navIcons/BookmarkIcon"
 import ProfileIcon from "./navIcons/ProfileIcon"
 import SettingIcon from "./navIcons/SettingIcon"
+import Logout from "../../components/logout/Logout"
+
 
 const NavigationMenu = () => {
   const navItems = [
     {
       icon: <HomeIcon />,
-      name: "Home"
+      name: "Home",
+      path: "/"
     },
     {
       icon:<SocietiesIcon />,
-      name: "Societies"
+      name: "Societies",
+      path: "/societies"
     },
     {
       icon: <NotificationIcon />,
-      name: "Notifications"
+      name: "Notifications",
+      path: "/notifications"
     },
     {
       icon: <BookmarkIcon />,
-      name: "Bookmarks"
+      name: "Bookmarks",
+      path: "/bookmark"
     },
     {
       icon: <ProfileIcon />,
-      name: "Profile"
+      name: "Profile",
+      path: "/profile",
+      hiddenOnMobile: true
     },
     {
       icon: <SettingIcon />,
-      name: "Setting"
+      name: "Settings",
+      path: "/settings",
+      hiddenOnMobile: true
+
     },
-    {
-      icon: <SettingIcon />,
-      name: "Logout"
-    },
+    // {
+    //   icon: <SettingIcon />,
+    //   name: "Logout"
+    // },
   ]
   
   return (
@@ -57,15 +68,24 @@ const NavigationMenu = () => {
 
       <ul className={styles.navList}>
         {
-          navItems.slice(0, 4).map((item, index) => {
-            return <li className={styles.navItem} key={index}>
-              <Link href="/" className={styles.navLink} title={item.name}>
+          navItems.map((item, index) => {
+            return <li 
+              className={`${styles.navItem} ${
+                item.hiddenOnMobile ? styles.hiddenOnMobile : ""
+              }`} 
+              key={index}
+            >
+              <Link href={item.path} className={styles.navLink} title={item.name}>
               {item.icon}
                 <span className={styles.navName}>{item.name}</span>
               </Link>
             </li>
           })
         }
+
+        <li className={`${styles.navItem} ${styles.hiddenOnMobile}`}>
+          <Logout />
+        </li>
       </ul>
     </nav>
   )
