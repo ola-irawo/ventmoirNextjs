@@ -25,21 +25,23 @@
   margin-left: clamp(1rem, 1vw, 2rem);
   background-color: #407bff;
   border-radius: 0.1rem;
+  padding: 1rem 1.7rem;
 }
 
 .joinSocietyBtn {
   color: #fff;
-  padding: 1rem;
 }
 
+.joinSocietyBtn,
 .optionBtn {
   /* font-family: Montserrat; */
   font-size: clamp(1rem, 1vw, 1.8rem);
-  font-weight: 400;
   font-weight: 500;
   line-height: clamp(1.219rem, 1.219vw, 2.194rem);
   letter-spacing: 0.02em;
-  color: #000000cc;
+}
+
+.optionBtn {
   color: #000000;
   transition: border-bottom, margin-top, 0.3s linear;
 }
@@ -48,11 +50,6 @@
   border-bottom: 0.1rem solid #000000;
   margin-top: clamp(0.2rem, 0.2vw, 1.4rem);
 }
-
-/* .societyOptionItem:nth-child(4) .optiondBtn {
-  background-color: black;
-  color: #fff;
-} */
 
 .activeOption {
   border-bottom: 0.1rem solid #000000;

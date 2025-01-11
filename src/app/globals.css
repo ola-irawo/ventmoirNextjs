@@ -195,14 +195,14 @@ body {
   }
 
   .app-c {
-    display: grid;
-    grid-template-columns: 1fr 20rem;
+    /* display: grid;
+    grid-template-columns: 1fr 20rem; */
     background-color: #f6f6f6;
     padding: 1.8rem 0rem 0rem 2.6rem;
   }
 
-  .widget {
+  /* .widget {
     display: block;
     padding-left: 2.2rem;
-  }
+  } */
 }

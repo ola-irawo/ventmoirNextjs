@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
             <Topbar />
             <div className="app-c">
               <div>{children}</div>
-              <h1 className="widget">Widget</h1>
+              {/* <h1 className="widget">Widget</h1> */}
             </div>
           </div>
         </div>

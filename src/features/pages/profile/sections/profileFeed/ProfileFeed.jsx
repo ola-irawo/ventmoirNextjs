@@ -37,24 +37,24 @@ const ProfileFeed = () => {
         <div className={styles.profileFeedOptionsContainer}>
             <ul className={styles.profileFeedList}>
                 <li className={styles.profileFeedItem}>
-                    <button 
-                      className={styles.profileFeedBtn}
-                      onClick={() => setActiveFeed("posts")}
-                    >Post</button>
+                  <button 
+                    className={`${styles.profileFeedBtn} ${activeFeed === "posts" ? styles.activeFeed : ""}`}
+                    onClick={() => setActiveFeed("posts")}
+                  >Post</button>
                 </li>
 
                 <li  className={styles.profileFeedItem}>
-                    <button 
-                    className={styles.profileFeedBtn}
+                  <button 
+                    className={`${styles.profileFeedBtn} ${activeFeed === "upvotes" ? styles.activeFeed : ""}`}
                     onClick={() => setActiveFeed("upvotes")}
                   >Upvote</button>
                 </li>
 
                 <li  className={styles.profileFeedItem}>
-                    <button 
-                    className={styles.profileFeedBtn}
+                  <button 
+                    className={`${styles.profileFeedBtn} ${activeFeed === "downvotes" ? styles.activeFeed : ""}`}
                     onClick={() => setActiveFeed("downvotes")}
-                    >Downvote</button>
+                  >Downvote</button>
                 </li>
             </ul>
         </div>
