@@ -1,0 +1,18 @@
+.homeWidget {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .homeLayoutContainer {
+    display: grid;
+    grid-template-columns: 1fr clamp(20rem, 20vw, 31.7rem);
+  }
+
+  .homeWidget {
+    display: block;
+    position: sticky;
+    top: 1.8rem;
+    align-self: start;
+    padding-left: 2.2rem;
+  }
+}
