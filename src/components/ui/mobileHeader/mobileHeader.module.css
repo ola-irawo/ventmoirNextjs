@@ -1,0 +1,8 @@
+.mobileHeaderContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  max-width: 50rem;
+  margin-bottom: 1.4rem;
+}
