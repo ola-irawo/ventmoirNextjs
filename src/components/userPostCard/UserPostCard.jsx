@@ -8,11 +8,14 @@ import Repost from "./components/repost/Repost"
 import SharePost from "./components/sharePost/SharePost"
 import BookmarkPost from "./components/bookmarkPost/BookmarkPost"
 import PostOptions from "./components/postOptions/PostOptions"
+import ReportPost from "./components/reportPost/ReportPost"
 
 const UserPostCard = ({post, username}) => {
     const [showPostOptions, setShowPostOptions] = useState(false)
+    const [reportPostOption, setReportPostOptions] = useState(false)
   return (
     <article className={styles.userPostCardContainer}>
+        {reportPostOption && <ReportPost setReportPostOptions={setReportPostOptions} />}
         <header className={styles.userPostHeader}>
 
             <div className={styles.userPostDetails}>
@@ -35,7 +38,7 @@ const UserPostCard = ({post, username}) => {
                         <path d="M4.00391 18.5313C4.00391 17.4267 3.10848 16.5312 2.00391 16.5312C0.899337 16.5312 0.00390625 17.4267 0.00390625 18.5313C0.00390625 19.6358 0.899337 20.5312 2.00391 20.5312C3.10848 20.5312 4.00391 19.6358 4.00391 18.5313Z" fill="#939393"/>
                     </svg>
                 </button>
-                {showPostOptions && <PostOptions setShowPostOptions={setShowPostOptions} />}
+                {showPostOptions && <PostOptions setReportPostOptions={setReportPostOptions} setShowPostOptions={setShowPostOptions} />}
             </div>
         </header>
 

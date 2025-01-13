@@ -13,10 +13,14 @@ const HomeLayout = () => {
 
       <div className={styles.homeWidget}>
         <h1>Widget</h1>
-        <PostButton />
+        <div className={styles.hiddenOnMobile}>
+          <PostButton setShowPostArea={setShowPostArea} />
+        </div>
       </div>
 
-      <PostButton setShowPostArea={setShowPostArea} />
+      <div className={styles.hiddenOnTabAndDesktop}>
+        <PostButton setShowPostArea={setShowPostArea} />
+      </div>
       {showPostArea && <PostArea setShowPostArea={setShowPostArea} />}
     </div>
   )

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styles from "./postOptions.module.css"
 
-const PostOptions = ({setShowPostOptions}) => {
+const PostOptions = ({setShowPostOptions, setReportPostOptions}) => {
     const [options, setOptions] = useState(null) // might not be necessary
 
     const postOptions = [
@@ -55,7 +55,7 @@ const PostOptions = ({setShowPostOptions}) => {
             console.log("delete post")
             break;
           case "Report post":
-            console.log("report post")
+            setReportPostOptions(true)
             break;
           case "Edit post":
             console.log("edit post")

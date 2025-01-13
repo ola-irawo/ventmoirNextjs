@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import styles from "./postArea.module.css"
 import MobileHeader from '../ui/mobileHeader/MobileHeader'
 import Image from 'next/image'
 
 const PostArea = ({setShowPostArea}) => {
+  const textareaRef = useRef()
+  const [textareaScrollHeight, setTextareaScrollHeight] = useState(23)
+
+  const handleTextareaInput = () => {
+    if (textareaRef.current) {
+      setTextareaScrollHeight(textareaRef.current.scrollHeight);
+    }
+  };
+
+  useEffect(() => {
+    setTextareaScrollHeight(textareaRef.current?.scrollHeight)
+  }, [textareaScrollHeight])
+
   return (
     <section className={styles.postAreaContainer}>
       <form action="" className={styles.postAreaForm}>
@@ -38,6 +51,12 @@ const PostArea = ({setShowPostArea}) => {
           <textarea 
             placeholder="Write something"
             className={styles.postAreaTextarea}
+            ref={textareaRef}
+            onInput={handleTextareaInput}
+            style={{
+              height: `${textareaScrollHeight}px`,
+              maxHeight: "20rem",
+            }}
           />
         </div>
 
