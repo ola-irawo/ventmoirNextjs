@@ -9,17 +9,33 @@ import SharePost from "./components/sharePost/SharePost"
 import BookmarkPost from "./components/bookmarkPost/BookmarkPost"
 import PostOptions from "./components/postOptions/PostOptions"
 import ReportPost from "./components/reportPost/ReportPost"
+import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 
 const UserPostCard = ({post, username}) => {
     const [showPostOptions, setShowPostOptions] = useState(false)
     const [reportPostOption, setReportPostOptions] = useState(false)
+
+    const router = useRouter()
+
   return (
     <article className={styles.userPostCardContainer}>
         {reportPostOption && <ReportPost setReportPostOptions={setReportPostOptions} />}
         <header className={styles.userPostHeader}>
 
-            <div className={styles.userPostDetails}>
-                <div className={styles.userProfileAvatarContainer}>Profile</div>
+            <div 
+                className={styles.userPostDetails}
+                onClick={() => router.push("/profile")}
+            >
+                <div className={styles.userProfileAvatarContainer}>
+                    <Image
+                        src="/profileAvatar.png"
+                        alt="user avatar"
+                        width={44}
+                        height={44}
+                        className={styles.userAvatar}
+                    />
+                </div>
                 
                 <div className={styles.usernameAndTimeContainer}>
                     <h2 className={styles.userPostName}>{username}</h2>
@@ -42,7 +58,10 @@ const UserPostCard = ({post, username}) => {
             </div>
         </header>
 
-        <div className={styles.postContent}>
+        <div 
+            className={styles.postContent}
+            onClick={() => router.push("/post/username/postId")}
+        >
             <p className={styles.userPost}>
                 {post}
             </p>
