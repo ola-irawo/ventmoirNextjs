@@ -2,6 +2,7 @@
   border: 0.05rem solid #dadada;
   padding: 1rem 1.7rem;
   margin-bottom: clamp(1rem, 1vw, 2.1rem);
+  max-width: 79.6rem;
 }
 
 .profileFeedList {

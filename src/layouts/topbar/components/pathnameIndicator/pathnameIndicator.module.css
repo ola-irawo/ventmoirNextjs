@@ -1,0 +1,22 @@
+.pathNameContainer {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .pathNameContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .goBackBtn {
+    width: clamp(2.2rem, 2.2vw, 2.7rem);
+    margin-right: clamp(0.6rem, 0.6rem, 1rem);
+  }
+
+  .pathName {
+    font-size: clamp(2.6rem, 2.6rem, 3rem);
+    font-weight: 500;
+    font-family: Poppins;
+    line-height: 4.5rem;
+  }
+}

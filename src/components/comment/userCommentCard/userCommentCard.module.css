@@ -1,0 +1,78 @@
+.userCommentCardContainer {
+  background-color: #fff;
+  margin-bottom: 2rem;
+}
+
+.userCommentCardContainer:not(:last-of-type) {
+  border-bottom: 0.05rem solid #ababab80;
+}
+
+.userCommentCardWrapper {
+  max-width: 73.8rem;
+  margin: 0 auto;
+  padding: 1.4rem 0.9rem 0rem 0.8rem;
+  display: grid;
+  grid-template-columns: clamp(4.5rem, 4.5vw, 5.6rem) 1fr;
+  gap: 2rem;
+}
+
+.userCommentHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.4rem;
+}
+
+.userProfileAvatarContainer {
+  width: clamp(4.5rem, 4.5vw, 5.6rem);
+  height: clamp(4.5rem, 4.5vw, 5.6rem);
+  border-radius: 6rem;
+  border: 0.1rem solid black;
+  cursor: pointer;
+}
+
+.usernameAndTimeContainer {
+  margin-top: 0.2rem;
+}
+
+.userCommentName {
+  font-family: Montserrat;
+  font-size: clamp(1.8rem, 1.8vw, 2rem);
+  font-weight: 500;
+  line-height: clamp(2.194rem, 2.194vw, 2.438rem);
+  letter-spacing: 0.02em;
+}
+
+.commentTime {
+  margin-top: clamp(0.5rem, 0.5vw, 0.9rem);
+  font-family: Montserrat;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.707rem;
+  letter-spacing: 0.02em;
+}
+
+.userCommentOptions {
+  align-self: baseline;
+}
+
+.userCommentOptions svg {
+  width: 0.4rem;
+  height: 2.1rem;
+}
+
+.commentPost {
+  min-height: 3rem;
+  font-family: Montserrat;
+  font-size: clamp(1.4rem, 1.4vw, 1.8rem);
+  font-weight: 400;
+  line-height: clamp(1.707rem, 1.707vw, 2.194rem);
+  letter-spacing: 0.01em;
+}
+
+.commentInteractionContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.7rem;
+  height: 5.2rem;
+  max-width: 50%;
+}

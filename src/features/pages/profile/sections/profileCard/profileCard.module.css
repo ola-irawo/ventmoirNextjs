@@ -18,6 +18,11 @@
   border-radius: 6rem;
 }
 
+.profileAvatar {
+  width: 100%;
+  height: 100%;
+}
+
 .usernameAndDateJoinedContainer {
   margin-left: clamp(0.2rem, 0.5vw, 1rem);
   display: grid;

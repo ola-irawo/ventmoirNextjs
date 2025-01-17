@@ -1,12 +1,15 @@
-.userPostCardContainer {
+.postDetailsContainer {
   max-width: 79.6rem;
   border-radius: 1.2rem;
   border: 0.05rem solid #dadada;
   background-color: #fff;
+}
+
+.parentPostContainer {
   padding: 1.4rem 0.9rem 0rem 0.8rem;
 }
 
-.userPostHeader {
+.postDetailsHeader {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.4rem;
@@ -16,16 +19,15 @@
   display: flex;
 }
 
-.userProfileAvatarContainer {
+.postDetailsAvatarContainer {
   width: clamp(4.4rem, 4.4vw, 9rem);
   height: clamp(4.4rem, 4.4vw, 9rem);
-  border-radius: 6rem;
+  cursor: pointer;
 }
 
 .userAvatar {
   width: 100%;
   height: 100%;
-  cursor: pointer;
 }
 
 .usernameAndTimeContainer {
@@ -52,12 +54,12 @@
   color: #000;
 }
 
-.userPostOptions {
+.postDeailsOption {
   align-self: baseline;
 }
 
-.userPostOptions svg {
-  width: 0.4rem;
+.postDeailsOption svg {
+  width: 0.04rem;
   height: 2.1rem;
 }
 
@@ -70,10 +72,11 @@
   letter-spacing: 0.02em;
 }
 
-.postInteractionContainer {
+.postDetailsInteractionContainer {
   display: flex;
   justify-content: space-between;
   margin-top: 0.7rem;
   border-top: 0.04rem solid #dadadab2;
+  border-bottom: 0.04rem solid #dadadab2;
   height: 5.2rem;
 }

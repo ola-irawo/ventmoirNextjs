@@ -11,12 +11,12 @@ const ProfileCard = () => {
             <div className={styles.profileCardUserDetails}>
                 <div className={styles.profileAvatarContainer}>
                     <Image
-                        src="/"
-                        alt={`User avatar`}
-                        width={52}
-                        height={52}
-                        priority
-                        className={styles.profileAvatar}
+                      src="/profileAvatar.png"
+                      alt={`User avatar`}
+                      width={52}
+                      height={52}
+                      priority
+                      className={styles.profileAvatar}
                     />
                 </div>
 
