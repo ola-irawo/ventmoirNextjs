@@ -24,9 +24,16 @@ const Topbar = () => {
 
             <div className={`${styles.profileLinkContainer} ${styles.hiddenOnDesktop}`}>
 
-                <Link href={"/profile"} className={styles.profileLink}>
+                {/* <Link href={"/profile"} className={styles.profileLink}>
                     user Profile
-                </Link>
+                </Link> */}
+                <Image
+                    src="/profileAvatar.png"
+                    alt="User avatar"
+                    width={34}
+                    height={34}
+                    className={styles.profileLink}
+                />
             </div>
 
             <form action="" className={styles.searchContainer}>
@@ -58,9 +65,13 @@ const Topbar = () => {
                 </div>
 
                 <div className={`${styles.profileLinkContainer} ${styles.hiddenOnMobile}`}>
-                    <Link href={"/profile"} className={styles.profileLink}>
-                        user Profile
-                    </Link>
+                    <Image
+                        src="/profileAvatar.png"
+                        alt="User avatar"
+                        width={34}
+                        height={34}
+                        className={styles.profileLink}
+                    />
                 </div>
             </div>
         </div>
