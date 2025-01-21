@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './welcomeMessage.module.css';
 
-const WelcomeMessage = ({ handleNextStep }) => {
+const WelcomeMessage = () => {
     return (
         <aside className={styles.welcomeMessage}>
             <h2>Welcome to Ventmoir</h2>

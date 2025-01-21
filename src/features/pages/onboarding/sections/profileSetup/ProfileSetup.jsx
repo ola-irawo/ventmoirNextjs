@@ -1,10 +1,12 @@
 import React from 'react'
 import styles from "./profileSetup.module.css"
 import Image from 'next/image'
+import ProfileAvatarSelector from "../../../../../components/profileAvatarSelector/ProfileAvatarSelector"
 
 const ProfileSetup = () => {
   return (
     <form className={styles.profileSetupForm}>
+        {/* {true && <ProfileAvatarSelector />} */}
         <header className={styles.profileSetupHeader}>
             <h2 className={styles.profileSetupUsername}>Hi Irawo</h2>
 
@@ -37,14 +39,6 @@ const ProfileSetup = () => {
                 className={styles.profileSetupFormTextarea}
             />
         </label>
-        
-        {/* <div>
-            <button
-                className={styles.profileSetupBtn}
-            >
-                Continue
-            </button>
-        </div> */}
     </form>
   )
 }

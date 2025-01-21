@@ -22,28 +22,43 @@ const OnboardingLayout = () => {
 
       switch (onboardingStep) {
         case 1:
-          return <JoinSociety handleNextStep={handleNextStep} />;
+          return <JoinSociety  />;
         case 2:
-          return <ProfileSetup handleNextStep={handleNextStep} />;
+          return <ProfileSetup />;
         case 3:
-        //   // This should show success or ready to get started.
-          return <WelcomeMessage handleNextStep={handleNextStep} onboardingStep={onboardingStep} />;
+          return <WelcomeMessage />;
         default:
-          return <JoinSociety handleNextStep={handleNextStep} />;
+          return <JoinSociety />;
       }
     };
+
   return (
     <div className={styles.onboardingContainer}>
+      <div className={styles.onboardingStepContainer}>
+        <ul className={styles.onboardingStepList}>
+          <li className={`${styles.onboardingStep} ${onboardingStep === 1 && styles.currentStep}`}>1</li>
+          <li className={`${styles.onboardingStep} ${onboardingStep === 2 && styles.currentStep}`}>2</li>
+          <li className={`${styles.onboardingStep} ${onboardingStep === 3 && styles.currentStep}`}>3</li>
+        </ul>
+
+        <button
+          className={styles.nextStepBtn}
+          onClick={() => handleNextStep()}
+        >
+          Skip
+        </button>
+      </div>
+
       {renderStep()}
 
-        <div className={styles.onboardingBtnContainer}>
-            <button
-                className={styles.onboardingNextStep}
-                onClick={() => handleNextStep()}
-            >
-                Continue
-            </button>
-        </div>
+      <div className={styles.onboardingBtnContainer}>
+        <button
+          className={styles.onboardingNextStep}
+          onClick={() => handleNextStep()}
+        >
+          Continue
+        </button>
+      </div>
     </div>
   )
 }

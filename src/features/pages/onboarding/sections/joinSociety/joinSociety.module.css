@@ -21,25 +21,27 @@
 }
 
 .societyTextContainer {
-  text-align: center;
+  display: grid;
+  justify-items: center;
+  gap: clamp(0.6rem, 0.6vw, 1.6rem);
 }
 
-.societyTextContainer h2 {
+.textHeader {
   margin-top: 0.6rem;
-  font-size: clamp(var(--m-medium-font-title), 2.3vw, 3.8rem);
-  font-weight: var(--small-fw);
-  line-height: clamp(var(--m-normal-line-height), 2vw, 4.632rem);
+  font-size: clamp(2.3rem, 2.3vw, 3.8rem);
+  font-weight: 500;
+  line-height: clamp(2rem, 2vw, 4.632rem);
 }
 
-.societyTextContainer p {
+.textDesc {
   margin-top: 0.6rem;
-  font-size: clamp(var(--m-small-text-size), 1.6vw, 1.8rem);
-  font-weight: var(--ex-small-fw);
-  line-height: clamp(var(--m-ex-small-line-height), 2vw, 3.169rem);
+  font-size: clamp(1.6rem, 1.6vw, 1.8rem);
+  font-weight: 400;
+  line-height: clamp(2rem, 2vw, 3.169rem);
 }
 
 .societySupportContainer {
-  margin-top: 1.6rem;
+  margin-top: clamp(1.6rem, 1.6vw, 3rem);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
   grid-template-columns: 1fr 1fr;
@@ -63,15 +65,15 @@
 }
 
 .supportInfoContainer h3 {
-  font-size: clamp(var(--m-small-text-size), 1.6vw, 3rem);
-  font-weight: var(--small-fw);
-  line-height: clamp(var(--m-small-line-height), 2vw, 3.657rem);
+  font-size: clamp(1.6rem, 1.6vw, 3rem);
+  font-weight: 500;
+  line-height: clamp(2rem, 2vw, 3.657rem);
 }
 
 .supportInfoContainer p {
-  font-size: clamp(var(--m-ex-small-text-size), 1.4vw, 2rem);
-  font-weight: var(--ex-small-fw);
-  line-height: clamp(var(--m-ex-small-line-height), 2vw, 2.438rem);
+  font-size: clamp(1.4rem, 1.4vw, 2rem);
+  font-weight: 400;
+  line-height: clamp(2rem, 2vw, 2.438rem);
 }
 
 @media (min-width: 618px) {
@@ -83,18 +85,5 @@
 @media (min-width: 768px) {
   .societyArticle {
     padding: 4.2rem 6.3rem 7.6rem 6.5rem;
-  }
-
-  .societyHeader {
-    margin-top: 7rem;
-  }
-
-  .societyTextContainer h2,
-  .societyTextContainer p {
-    margin-top: 1.6rem;
-  }
-
-  .societySupportContainer {
-    margin-top: 3rem;
   }
 }

@@ -1,0 +1,74 @@
+.hiddenOnMobile {
+  display: none;
+}
+
+.profileAvatarContainer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+.profileAvatarWrapper {
+  width: clamp(20rem, 100%, 97rem);
+  max-width: 97rem;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 1rem;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.profileAvatarWrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.profileAvatarHead {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.profileAvatarList {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(3rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 2.1rem;
+}
+
+.profileAvatarItem {
+  width: clamp(3rem, 10vw, 14rem);
+  height: clamp(3rem, 10vw, 14rem);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profileAvatarItem img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .hiddenOnTabAndDesktop {
+    display: none;
+  }
+
+  .hiddenOnMobile {
+    display: block;
+  }
+
+  .profileAvatarWrapper {
+    border-radius: 3rem;
+  }
+
+  .profileAvatarList {
+    gap: 2.6rem;
+  }
+}

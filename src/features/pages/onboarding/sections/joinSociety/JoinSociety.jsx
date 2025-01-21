@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import styles from './joinSociety.module.css';
 
-const JoinSociety = ({ handleNextStep }) => {
+const JoinSociety = () => {
     const societies = ["Anxiety", "Trauma", "Marriage", "Relationship"];
 
     return (
@@ -20,8 +20,8 @@ const JoinSociety = ({ handleNextStep }) => {
                     </div>
 
                     <div className={styles.societyTextContainer}>
-                        <h2>Join a Society</h2>
-                        <p>Select a society you’d like to join.</p>
+                        <h2 className={styles.textHeader}>Join a Society</h2>
+                        <p className={styles.textDesc}>Select a society you’d like to join.</p>
                     </div>
                 </div>
 
@@ -49,10 +49,6 @@ const JoinSociety = ({ handleNextStep }) => {
                         </div>
                     ))}
                 </div>
-
-                {/* <div className={styles.nextOnboardingStep}>
-                    <button onClick={handleNextStep}>Continue</button>
-                </div> */}
             </article>
         </section>
     );
