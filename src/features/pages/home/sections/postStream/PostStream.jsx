@@ -4,7 +4,7 @@ import styles from "./postStream.module.css"
 
 const PostStream = () => {
     const postContent = [
-        { id: 1, user: "John Doe", content: "This is my first post!" },
+        { id: 1, user: "John Doe", content: "This is my first post!", quote: "This is a quote", quoteUsername: 'Elijah'  },
         { id: 2, user: "Jane Smith", content: "Loving the new platform! 😍" },
         { id: 3, user: "Samuel Lee", content: "Any tips for staying productive?" },
         { id: 4, user: "Emily Brown", content: "Had an amazing day exploring the city!" },
@@ -18,7 +18,7 @@ const PostStream = () => {
             {
                 postContent.map((post, index) => {
                     return <li key={index}>
-                        <UserPostCard post={post.content} username={post.user} />
+                        <UserPostCard quote={post?.quote} post={post.content} username={post.user} quoteUsername={post.quoteUsername} />
                     </li>
                 })
             }
