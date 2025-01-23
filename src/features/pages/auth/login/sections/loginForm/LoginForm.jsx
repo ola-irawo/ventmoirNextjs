@@ -2,6 +2,7 @@ import React from 'react'
 import styles from "./loginForm.module.css"
 import Link from 'next/link'
 import Image from 'next/image'
+import AuthErrorMessage from "../../../components/authErrorMessage/AuthErrorMessage"
 
 const LoginForm = () => {
   return (
@@ -32,6 +33,7 @@ const LoginForm = () => {
               placeholder="username"
               className={styles.formInput}
             />
+            {true && <AuthErrorMessage errorMessage={"Email already taken. Please try another email."}/>}
           </label>
 
           <label htmlFor="">
@@ -42,6 +44,8 @@ const LoginForm = () => {
               className={styles.formInput}
             />
           </label>
+
+          <p className={styles.forgotPassword}>Forget password</p>
 
           <button
             className={styles.loginButton}

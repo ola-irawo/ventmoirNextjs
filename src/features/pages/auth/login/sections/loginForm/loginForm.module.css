@@ -59,13 +59,24 @@
   font-weight: var(--ex-small-fw);
 }
 
+.forgotPassword {
+  font-family: Montserrat;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  text-align: right;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #407bff;
+}
+
 .loginButton {
   width: 100%;
   height: clamp(4.8rem, 5.3vw, 7rem);
   padding: 1.5rem;
   border-radius: 1.2rem;
   color: var(--primary-white-color, #fff);
-  background-color: var(--light-blue, blue);
+  background-color: #407bff;
   font-size: var(--m-medium-text-size);
   font-weight: var(--small-fw);
 }
