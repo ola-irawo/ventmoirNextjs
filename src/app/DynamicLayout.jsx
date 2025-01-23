@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const pathnames = ["login", "onboarding", "signup", "otp"];
+const pathnames = ["login", "onboarding", "signup", "otp", "password-reset"];
 
 export default function DynamicLayout({ children }) {
   const currentPath = usePathname(); // Get the current pathname dynamically
