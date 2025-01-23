@@ -4,8 +4,8 @@ import Image from 'next/image'
 
 const VerifyEmail = () => {
   return (
-    <section className={styles.loginSection}>
-      <form action="" className={styles.logInForm}>
+    <section className={styles.verifyEmailSection}>
+      <form action="" className={styles.verifyEmailForm}>
         
       <div className={styles.brandLogoContainer}>
           <Image
@@ -18,8 +18,9 @@ const VerifyEmail = () => {
           />
         </div>
 
-        <header>
-          <h2 className={styles.loginHeader}>Login</h2>
+        <header className={styles.verifyEmailHeaderContainer}>
+          <h2 className={styles.verifyEmailHeader}>Verify email address</h2>
+          <p className={styles.verifyEmailText}>We have sent a 6 digit code to +234******42. Kindly enter the code below to verify your phone number</p>
         </header>
 
         <div className={styles.inputContainer}>
@@ -34,12 +35,16 @@ const VerifyEmail = () => {
           </label>
 
           <button
-            className={styles.loginButton}
+            className={styles.verifyEmailButton}
           >
             Verify
           </button>
         </div>
         
+        <div className={styles.resendOtpContainer}>
+          <p>Didn't receive OTP?</p>
+          <button className={styles.resendOtpBtn}>Resend OTP.</button>
+        </div>
       </form>
     </section>
   )

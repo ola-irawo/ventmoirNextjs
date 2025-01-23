@@ -4,8 +4,8 @@ import Image from 'next/image'
 
 const ForgotPassword = () => {
   return (
-    <section className={styles.loginSection}>
-      <form action="" className={styles.logInForm}>
+    <section className={styles.forgetPasswordSection}>
+      <form action="" className={styles.forgotPasswordForm}>
         
       <div className={styles.brandLogoContainer}>
           <Image
@@ -18,8 +18,9 @@ const ForgotPassword = () => {
           />
         </div>
 
-        <header>
-          <h2 className={styles.loginHeader}>Login</h2>
+        <header className={styles.forgotPasswordHeaderContainer}>
+          <h2 className={styles.forgotPasswordHeader}>Forgot Password</h2>
+          <p className={styles.forgotPasswordText}>Enter your Email Address</p>
         </header>
 
         <div className={styles.inputContainer}>
@@ -34,7 +35,7 @@ const ForgotPassword = () => {
           </label>
 
           <button
-            className={styles.loginButton}
+            className={styles.forgotPasswordButton}
           >
             Send OTP
           </button>

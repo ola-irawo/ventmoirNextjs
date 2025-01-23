@@ -5,7 +5,7 @@ import ChangePassword from "../pages/changePassword/ChangePassword"
 import VerifyEmail from "../pages/verifyEmail/VerifyEmail"
 
 const PasswordResetLayout = () => {
-    const [authReset, setAuthReset] = useState("verifyEmail")
+    const [authReset, setAuthReset] = useState("changePassword")
 
     const renderAuthSteps = () => {
         switch(authReset){

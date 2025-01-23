@@ -4,8 +4,8 @@ import Image from 'next/image'
 
 const ChangePassword = () => {
   return (
-    <section className={styles.loginSection}>
-      <form action="" className={styles.logInForm}>
+    <section className={styles.changePasswordSection}>
+      <form action="" className={styles.changePasswordForm}>
         
       <div className={styles.brandLogoContainer}>
           <Image
@@ -18,8 +18,9 @@ const ChangePassword = () => {
           />
         </div>
 
-        <header>
-          <h2 className={styles.loginHeader}>Login</h2>
+        <header className={styles.changePasswordHeaderContainer}>
+          <h2 className={styles.changePasswordHeader}>Change Password</h2>
+          <p className={styles.changePasswordText}>Enter new password</p>
         </header>
 
         <div className={styles.inputContainer}>
@@ -43,7 +44,7 @@ const ChangePassword = () => {
           </label>
 
           <button
-            className={styles.loginButton}
+            className={styles.changePasswordButton}
           >
             Submit
           </button>

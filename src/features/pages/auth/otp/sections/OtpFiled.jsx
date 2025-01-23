@@ -4,8 +4,8 @@ import Image from 'next/image'
 
 const OtpField = () => {
   return (
-    <section className={styles.loginSection}>
-      <form action="" className={styles.logInForm}>
+    <section className={styles.otpSection}>
+      <form action="" className={styles.otpForm}>
         
       <div className={styles.brandLogoContainer}>
           <Image
@@ -18,8 +18,9 @@ const OtpField = () => {
           />
         </div>
 
-        <header>
-          <h2 className={styles.loginHeader}>OTP Verification</h2>
+        <header className={styles.otpHeaderContainer}>
+          <h2 className={styles.otpHeader}>OTP Verification</h2>
+          <p className={styles.otpText}>Enter the OTP sent to irawo@gmail.com</p>
         </header>
 
         <div className={styles.inputContainer}>
@@ -34,12 +35,17 @@ const OtpField = () => {
           </label>
 
           <button
-            className={styles.loginButton}
+            className={styles.otpButton}
           >
             Verify
           </button>
         </div>
-        
+
+        <div className={styles.resendOtpContainer}>
+          <p>Didn't receive OTP?</p>
+          <button className={styles.resendOtpBtn}>Resend OTP.</button>
+        </div>
+
       </form>
     </section>
   )
