@@ -3,7 +3,7 @@ import styles from "./profileAvatarSelector.module.css";
 import MobileHeader from "../ui/mobileHeader/MobileHeader";
 import Image from "next/image";
 
-const ProfileAvatarSelector = () => {
+const ProfileAvatarSelector = ({setShowProfileAvatarSelector}) => {
   const allProfileAvatars = ["1", "2", "3"]; // Ensure all elements are strings for consistency
 
   return (
@@ -15,14 +15,16 @@ const ProfileAvatarSelector = () => {
       <div className={styles.profileAvatarWrapper}>
         {/* Mobile Header */}
         <div className={styles.hiddenOnTabAndDesktop}>
-          <MobileHeader />
+          <MobileHeader close={setShowProfileAvatarSelector} />
         </div>
 
         {/* Header Section */}
         <div className={styles.profileAvatarHead}>
           <h2 id="choose-profile-avatar">Choose Profile Avatar</h2>
           <div className={styles.hiddenOnMobile}>
-            <button aria-label="Click to close modal">
+            <button aria-label="Click to close modal"
+            onClick={() => setShowProfileAvatarSelector(false)}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="15"
