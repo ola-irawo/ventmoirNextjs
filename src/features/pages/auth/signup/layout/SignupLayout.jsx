@@ -1,10 +1,10 @@
 import React from 'react'
-import SignupForm from '../sections/signupForm/SignUpForm'
+import SignupForm from '../sections/signupForm/SignupForm'
 
 const SignupLayout = () => {
   return (
     <div>
-      <SignupForm />
+      <SignupForm/>
     </div>
   )
 }
