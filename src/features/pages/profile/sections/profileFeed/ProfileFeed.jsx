@@ -6,9 +6,7 @@ import UpvoteFeed from './components/upvoteFeed/UpvoteFeed';
 import DownvoteFeed from './components/downvoteFeed/DownvoteFeed';
 
 const ProfileFeed = () => {
-    const [activeFeed, setActiveFeed] = useState(() => {
-        return localStorage.getItem('activeFeed') || 'posts';
-    });
+    const [activeFeed, setActiveFeed] = useState("posts");
 
       const handleActiveFeed = (activeFeed) => {
         setActiveFeed(activeFeed)
@@ -26,11 +24,6 @@ const ProfileFeed = () => {
             return "Posts"
         }
       }
-  
-      useEffect(() => {
-
-        localStorage.setItem('activeFeed', activeFeed);
-      }, [activeFeed]);
   
   return (
     <section className={styles.profileFeedSection}>
