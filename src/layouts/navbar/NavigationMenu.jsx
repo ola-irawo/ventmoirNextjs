@@ -84,7 +84,10 @@ const NavigationMenu = () => {
         }
 
         <li className={`${styles.navItem} ${styles.hiddenOnMobile}`}>
-          <Logout />
+          <div className={styles.navLink} title="logout">
+            <Logout />
+            <span className={styles.navName}>Logout</span>
+          </div>
         </li>
       </ul>
     </nav>

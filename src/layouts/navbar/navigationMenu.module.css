@@ -30,12 +30,22 @@
   justify-items: center;
 }
 
+.navLink svg {
+  width: clamp(1.8rem, 1.8vw, 2.8rem);
+  height: clamp(1.8rem, 1.8vw, 2.8rem);
+}
+
 .navLink:hover svg {
   fill: #000;
 }
 
-.navName:hover {
-  color: blue;
+.navName {
+  font-family: Montserrat;
+  font-size: clamp(1.2rem, 1.2vw, 2.2rem);
+  font-weight: 500;
+  line-height: clamp(1.909rem, 1.909vw, 2.682rem);
+  letter-spacing: 0.02em;
+  color: #000000d6;
 }
 
 @media (min-width: 768px) {
@@ -60,7 +70,6 @@
     justify-content: space-around;
     width: clamp(10rem, 15vw, 31.1rem);
     height: 50rem;
-    align-items: center;
   }
 
   .hiddenOnMobile {
@@ -69,6 +78,10 @@
 
   .navLink {
     width: clamp(12rem, 12vw, 18.7rem);
+  }
+
+  .navLink:hover svg {
+    fill: #000000a6;
   }
 }
 
@@ -91,12 +104,30 @@
     width: clamp(20rem, 20vw, 31.1rem);
   }
 
+  .navItem {
+    display: grid;
+    place-items: center;
+    padding: 1.2rem 0rem;
+  }
+
+  .navItem:hover {
+    background-color: #407bff;
+    border-radius: 1rem;
+  }
+
+  .navItem:hover .navName {
+    color: #fff;
+  }
+
   .navLink {
-    justify-content: unset;
-    display: flex;
+    /* justify-content: unset; */
+    display: grid;
+    grid-template-columns: clamp(2rem, 2vw, 2.8rem) 1fr;
+    gap: 2rem;
   }
 
   .navName {
-    margin-left: 1.8rem;
+    /* margin-left: 1.8rem; */
+    justify-self: flex-start;
   }
 }
