@@ -70,6 +70,7 @@
     justify-content: space-around;
     width: clamp(10rem, 15vw, 31.1rem);
     height: 50rem;
+    align-items: center;
   }
 
   .hiddenOnMobile {
@@ -83,9 +84,7 @@
   .navLink:hover svg {
     fill: #000000a6;
   }
-}
 
-@media (min-width: 768px) {
   .navItem:nth-child(1) {
     margin-top: clamp(2rem, 3vw, 3rem);
   }
@@ -102,6 +101,7 @@
 @media (min-width: 1200px) {
   .navList {
     width: clamp(20rem, 20vw, 31.1rem);
+    align-items: unset;
   }
 
   .navItem {
@@ -119,15 +119,17 @@
     color: #fff;
   }
 
+  .navItem:hover svg {
+    fill: #fff;
+  }
+
   .navLink {
-    /* justify-content: unset; */
     display: grid;
     grid-template-columns: clamp(2rem, 2vw, 2.8rem) 1fr;
     gap: 2rem;
   }
 
   .navName {
-    /* margin-left: 1.8rem; */
     justify-self: flex-start;
   }
 }
