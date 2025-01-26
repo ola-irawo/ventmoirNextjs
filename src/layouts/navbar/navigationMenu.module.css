@@ -123,6 +123,10 @@
     fill: #fff;
   }
 
+  .navItem:first-of-type svg path {
+    fill: #fff;
+  }
+
   .navLink {
     display: grid;
     grid-template-columns: clamp(2rem, 2vw, 2.8rem) 1fr;
@@ -131,5 +135,6 @@
 
   .navName {
     justify-self: flex-start;
+    cursor: pointer;
   }
 }
