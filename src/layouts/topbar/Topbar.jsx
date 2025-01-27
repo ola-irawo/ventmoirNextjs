@@ -67,7 +67,7 @@ const Topbar = () => {
 
             <div className={styles.profileandNotificationContainer}>
                 <div className={styles.notificationContainer}>
-                    <Link href={"/notification"}>
+                    <Link href={"/notifications"}>
                         <NotificationIcon />
                     </Link>
                 </div>
