@@ -59,7 +59,7 @@
 }
 
 .postDeailsOption svg {
-  width: 0.04rem;
+  width: 0.4rem;
   height: 2.1rem;
 }
 
@@ -70,6 +70,7 @@
   font-weight: 400;
   line-height: clamp(1.707rem, 1.707vw, 1.95rem);
   letter-spacing: 0.02em;
+  padding: 2rem 0rem;
 }
 
 .postDetailsInteractionContainer {
