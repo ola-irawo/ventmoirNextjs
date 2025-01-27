@@ -2,6 +2,7 @@
   margin-top: clamp(0.8rem, 0.8vw, 1.1rem);
   margin-bottom: 9rem;
   background-color: #fff;
+  border-radius: 1.2rem;
 }
 
 .notificationListItem:not(:last-of-type) {
