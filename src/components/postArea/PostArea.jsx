@@ -8,14 +8,23 @@ const PostArea = ({setShowPostArea}) => {
   const [textareaScrollHeight, setTextareaScrollHeight] = useState(23)
 
   const handleTextareaInput = () => {
-    if (textareaRef.current) {
-      setTextareaScrollHeight(textareaRef.current.scrollHeight);
+    const textarea = textareaRef?.current
+    // if (textareaRef.current) {
+    //   setTextareaScrollHeight(textareaRef.current.scrollHeight);
+    // }
+
+    if (textarea) {
+      if (textarea.value.trim() === "") {
+        setTextareaScrollHeight(23); // Reset to default height when empty
+      } else {
+        setTextareaScrollHeight(textarea.scrollHeight); // Adjust height dynamically
+      }
     }
   };
 
-  useEffect(() => {
-    setTextareaScrollHeight(textareaRef.current?.scrollHeight)
-  }, [textareaScrollHeight])
+  // useEffect(() => {
+  //   setTextareaScrollHeight(textareaRef.current?.scrollHeight)
+  // }, [textareaScrollHeight])
 
   return (
     <section className={styles.postAreaContainer}>
