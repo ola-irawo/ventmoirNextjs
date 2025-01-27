@@ -2,7 +2,7 @@
   /* width: 95%; */
   /* margin: 0 auto; */
   padding: clamp(1.3rem, 1.3vw, 2rem);
-  border-bottom: 0.1rem solid black;
+  border-bottom: 0.1rem solid #ababab80;
 }
 
 .commentFormContainer {
