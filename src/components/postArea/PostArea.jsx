@@ -60,7 +60,9 @@ const PostArea = ({setShowPostArea}) => {
           />
         </div>
 
-        <button className={styles.postAreaPostBtn}>
+        <button
+          className={`${styles.postAreaPostBtn} ${styles.hiddenOnMobile}`}
+        >
           Post
         </button>
       </form>
