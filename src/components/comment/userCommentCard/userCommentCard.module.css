@@ -74,5 +74,11 @@
   justify-content: space-between;
   margin-top: 0.7rem;
   height: 5.2rem;
-  max-width: 50%;
+  max-width: 70%;
 }
+
+/* @media (min-width: 768px) {
+  .commentInteractionContainer {
+    max-width: 50%;
+  }
+} */
