@@ -70,7 +70,7 @@
   font-weight: 400;
   line-height: clamp(1.707rem, 1.707vw, 1.95rem);
   letter-spacing: 0.02em;
-  padding: 2rem 0rem;
+  padding-bottom: 2rem;
 }
 
 .postDetailsInteractionContainer {
