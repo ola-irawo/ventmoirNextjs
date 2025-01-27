@@ -1,14 +1,21 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import styles from "./topbar.module.css"
 import Image from 'next/image'
 import Link from 'next/link'
 import NotificationIcon from '../../components/ui/notificationIcon/NotificationIcon'
 import PathnameIndicator from "./components/pathnameIndicator/PathnameIndicator"
+import SideBar from "./components/sideBar/SideBar"
 
 const Topbar = () => {
+    const [showSideBar, setShowSideBar] = useState(false)
   return (
-    <div className={styles.topbarContainer}>
-        <div className={styles.brandLogoContainer}>
+    <section className={styles.topbarContainer}>
+        <div className={styles.hiddenOnDesktop}>
+            {showSideBar && <SideBar setShowSideBar={setShowSideBar}/>}
+        </div>
+
+        <section className={styles.brandLogoContainer}>
             <Image
                 src="/ventmoir.svg"
                 alt="Ventmoir logo"
@@ -17,9 +24,9 @@ const Topbar = () => {
                 priority
                 className={`${styles.brandLogo} ${styles.hiddenOnDesktop}`}
             />
-        </div>
+        </section>
 
-        <div className={styles.topbarContent}>
+        <section className={styles.topbarContent}>
             <PathnameIndicator />
 
             <div className={`${styles.profileLinkContainer} ${styles.hiddenOnDesktop}`}>
@@ -33,6 +40,7 @@ const Topbar = () => {
                     width={34}
                     height={34}
                     className={styles.profileLink}
+                    onClick={() => setShowSideBar(true)}
                 />
             </div>
 
@@ -74,9 +82,9 @@ const Topbar = () => {
                     />
                 </div>
             </div>
-        </div>
+        </section>
       
-    </div>
+    </section>
   )
 }
 
