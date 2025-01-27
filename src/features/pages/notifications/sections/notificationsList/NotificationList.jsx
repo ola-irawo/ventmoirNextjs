@@ -9,7 +9,7 @@ const NotificationList = () => {
         {
             notificationList.map((list, index) => {
                 return <li key={index}>
-                    list
+                  Notification will be updated
                 </li>
             })
         }
