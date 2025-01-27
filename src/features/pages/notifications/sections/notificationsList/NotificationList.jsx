@@ -62,7 +62,7 @@ const NotificationList = () => {
                   <p
                     className={styles.notificationContent}
                   >
-                    In everything we do in life we should try to be..
+                    In everything we do in life we should try to be...
                     {/* {alert?.commentId?.comment &&
                     alert?.commentId?.comment.length > 100
                       ? alert?.commentId?.comment.slice(0, 100) + " ...see more"
