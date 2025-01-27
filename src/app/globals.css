@@ -156,6 +156,7 @@ code {
 
 body {
   max-width: 144rem;
+  margin: auto;
   background-color: #f6f6f6;
 }
 
