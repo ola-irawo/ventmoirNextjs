@@ -2,47 +2,47 @@
 import React, { useEffect, useRef, useState } from 'react'
 
 const page = () => {
-  const canvasRef = useRef(null)
-  const [isDrawing, setIsDrawing] = useState(false);
-  const [isErasing, setIsErasing] = useState(false);
+//   const canvasRef = useRef(null)
+//   const [isDrawing, setIsDrawing] = useState(false);
+//   const [isErasing, setIsErasing] = useState(false);
 
-  const startDrawing = (e) => {
-    const canvas = canvasRef.current
-    const ctx = canvas.getContext("2d")
+//   const startDrawing = (e) => {
+//     const canvas = canvasRef.current
+//     const ctx = canvas.getContext("2d")
 
-    if(isErasing){
-      ctx.strokeStyle = "#ffffff"
-      ctx.lineWidth = "20"
-    }
-    else {
-      ctx.strokeStyle = '#000000'; // Default drawing color
-      ctx.lineWidth = 2;
-    }
+//     if(isErasing){
+//       ctx.strokeStyle = "#ffffff"
+//       ctx.lineWidth = "20"
+//     }
+//     else {
+//       ctx.strokeStyle = '#000000'; // Default drawing color
+//       ctx.lineWidth = 2;
+//     }
 
-    ctx.beginPath()
-    ctx.moveTo(e.nativeEvent.offsetX, e.nativeEvent.offsetY)
-    setIsDrawing(true)
+//     ctx.beginPath()
+//     ctx.moveTo(e.nativeEvent.offsetX, e.nativeEvent.offsetY)
+//     setIsDrawing(true)
 
-  }
+//   }
 
-  const draw = e => {
-    if(!isDrawing) return;
+//   const draw = e => {
+//     if(!isDrawing) return;
 
-    const canvas = canvasRef.current
-    const ctx = canvas.getContext("2d")
-    ctx.lineTo(e.nativeEvent.offsetX, e.nativeEvent.offsetY)
-    ctx.stroke()
-  } 
+//     const canvas = canvasRef.current
+//     const ctx = canvas.getContext("2d")
+//     ctx.lineTo(e.nativeEvent.offsetX, e.nativeEvent.offsetY)
+//     ctx.stroke()
+//   } 
 
-  const stopDrawing = () => {
-    setIsDrawing(false);
-  };
+//   const stopDrawing = () => {
+//     setIsDrawing(false);
+//   };
 
-  const clearCanvas = () => {
-    const canvas = canvasRef.current
-    const ctx = canvas.getContext("2d")
-    ctx.clearRect(0, 0, canvas.width, canvas.height)
-}
+//   const clearCanvas = () => {
+//     const canvas = canvasRef.current
+//     const ctx = canvas.getContext("2d")
+//     ctx.clearRect(0, 0, canvas.width, canvas.height)
+// }
 
   // useEffect(() => {
   //   const canvas = canvasRef?.current
@@ -88,7 +88,7 @@ const page = () => {
   return (
     <main>
       <h1>Settings will be updated</h1>
-      <canvas 
+      {/* <canvas 
         ref={canvasRef}
         width={400}
         height={400}
@@ -104,7 +104,7 @@ const page = () => {
 
       </canvas>
       <button onClick={clearCanvas}>Clear</button>
-      <button onClick={() => setIsErasing(prev => !prev)}>Eraser</button>
+      <button onClick={() => setIsErasing(prev => !prev)}>Eraser</button> */}
     </main>
   )
 }
