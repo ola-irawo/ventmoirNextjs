@@ -36,6 +36,9 @@ const PathnameIndicator = () => {
          else if (pathname.includes("post")) {
           return "Post";
         } 
+         else if (pathname.includes("settings")) {
+          return "Settings";
+        } 
         
         else {
           return "Unknown"; // Default case for paths not explicitly handled
