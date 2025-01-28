@@ -35,7 +35,7 @@
 
 .userPostName {
   font-family: Montserrat;
-  font-size: clamp(1.8rem, 1.8vw, 2.2rem);
+  font-size: clamp(1.6rem, 1.4vw, 2.2rem);
   font-weight: 500;
   line-height: clamp(2.194rem, 2.194vw, 2.682rem);
   letter-spacing: 0.02em;
@@ -45,7 +45,7 @@
 .postTime {
   margin-top: clamp(0.5rem, 0.5vw, 0.9rem);
   font-family: Montserrat;
-  font-size: clamp(1.4rem, 1.4vw, 1.6rem);
+  font-size: clamp(0.8rem, 0.8vw, 1.6rem);
   font-weight: 400;
   line-height: clamp(1.707rem, 1.707vw, 1.95rem);
   letter-spacing: 0.02em;
@@ -64,7 +64,7 @@
 .userPost {
   min-height: 3rem;
   font-family: Montserrat;
-  font-size: clamp(1.4rem, 1.4vw, 1.6rem);
+  font-size: clamp(1rem, 1vw, 1.6rem);
   font-weight: 400;
   line-height: clamp(1.707rem, 1.707vw, 1.95rem);
   letter-spacing: 0.02em;
