@@ -1,0 +1,16 @@
+.saveChangesBtn {
+  background-color: #407bff;
+  color: #fafafa;
+  width: 21.2rem;
+  height: clamp(5rem, 5vw, 5.5rem);
+  padding: 1.4rem 4.1rem;
+  border-radius: 1.2rem;
+  font-family: Montserrat;
+  font-size: clamp(1.8rem, 1.8vw, 2.2rem);
+  font-weight: 500;
+  line-height: clamp(2.194rem, 2.194vw, 2.682rem);
+  letter-spacing: 0.02em;
+  display: block;
+  margin: 0 auto;
+  margin-top: clamp(5.1rem, 5.1vw, 8.4rem);
+}

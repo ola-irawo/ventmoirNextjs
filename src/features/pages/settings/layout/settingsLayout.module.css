@@ -1,0 +1,47 @@
+.settingsLayout {
+  padding: 0 2rem;
+  max-width: 97.8rem;
+}
+
+.settingsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.settingsListItem {
+  font-size: clamp(1.8rem, 1.8vw, 2.8rem);
+  font-weight: 500;
+  line-height: clamp(2.194rem, 2.194vw, 3.413rem);
+  letter-spacing: 0.02em;
+  margin-top: 2.6rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.1rem solid rgba(51, 51, 51, 0.2);
+  font-family: Montserrat;
+}
+
+.settingsListItem:not(:last-of-type) {
+  border-bottom: 0.1rem solid rgba(51, 51, 51, 0.2);
+}
+
+.settingsListItem:hover {
+  border-bottom: 0.1rem solid rgba(51, 51, 51, 0.5);
+}
+
+.settingsLink {
+  color: #4d4d4d;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.settingsLink:hover {
+  color: #000;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}

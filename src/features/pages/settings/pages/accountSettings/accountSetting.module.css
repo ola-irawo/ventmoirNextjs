@@ -1,0 +1,75 @@
+.accountSettingsForm {
+  max-width: 98.1rem;
+  margin: 0 auto;
+  padding: 1rem 1.1rem 1.7rem 1.1rem;
+  border-radius: clamp(1.2rem, 1.2vw, 1.2rem);
+  border: 0.1rem solid #00000080;
+  background-color: #fff;
+}
+
+.accountSettingsHead {
+  font-family: Montserrat;
+  font-size: clamp(1.8rem, 1.8vw, 2.4rem);
+  font-weight: 500;
+  line-height: clamp(2.194rem, 2.194vw, 2.926rem);
+  color: #4e4e4e;
+  margin-bottom: clamp(2.1rem, 2.1vw, 2.4rem);
+}
+
+.inputContainer {
+  display: grid;
+  gap: clamp(1.1rem, 1.1vw, 2rem);
+}
+
+.accountSettingsInputContainer {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.accountSettingsLabel {
+  font-family: Montserrat;
+  font-size: clamp(1.6rem, 1.6vw, 2rem);
+  font-weight: 500;
+  line-height: clamp(1.95rem, 1.95vw, 2.438rem);
+  letter-spacing: 0.02em;
+  color: #000000db;
+}
+
+.accountSettingsInput {
+  font-family: Montserrat;
+  font-size: clamp(1.6rem, 1.6vw, 2rem);
+  font-weight: 400;
+  line-height: clamp(1.707rem, 1.707vw, 2.438rem);
+  width: 314px;
+  width: 100%;
+  height: clamp(4.3rem, 4.3vw, 6.1rem);
+  border-radius: clamp(0.8rem, 0.8vw, 1.2rem);
+  border: 0.1rem solid #263238;
+  padding: 1.3rem 1.4rem;
+}
+
+@media (min-width: 768px) {
+  /* .accountSettingsForm {
+    width: clamp(60.6rem, 60.6vw, 98.1rem);
+  } */
+
+  .accountSettingsHead {
+    color: #000;
+  }
+
+  .accountSettingsInputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .accountSettingsInput {
+    width: clamp(31.4rem, 41.4vw, 54rem);
+  }
+}
+
+@media (min-width: 1028px) {
+  .accountSettingsForm {
+    width: clamp(70.6rem, 70.6vw, 98.1rem);
+  }
+}
