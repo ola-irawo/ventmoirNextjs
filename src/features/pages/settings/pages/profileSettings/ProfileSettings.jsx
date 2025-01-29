@@ -1,0 +1,33 @@
+import React from 'react'
+import styles from "./profileSettings.module.css"
+import Button from '../../components/button/Button'
+
+const ProfileSettings = () => {
+  return (
+    <section>
+        <form className={styles.accountSettingsForm}>
+            <h3 className={styles.accountSettingsHead}>Change Profile Details</h3>
+
+            <section className={styles.inputContainer}>
+
+                <div className={styles.accountSettingsInputContainer}>
+                    <label className={styles.accountSettingsLabel}>
+                        Display Name
+                    </label>
+                    <input
+                        type="text"
+                        placeholder="Username"
+                        className={styles.accountSettingsInput}
+                    />
+                </div>
+
+            </section>
+
+            <Button />
+        </form>
+    </section>
+
+  )
+}
+
+export default ProfileSettings
