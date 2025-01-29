@@ -1,9 +1,11 @@
 import React from 'react'
+import ProfileSettings from "../../../features/pages/settings/pages/profileSettings/ProfileSettings"
 
 const page = () => {
+
   return (
     <main>
-      profile settings
+      <ProfileSettings />
     </main>
   )
 }
