@@ -6,7 +6,7 @@
 @media (min-width: 1000px) {
   .bookmarkedWrapper {
     max-width: 83.5rem;
-    max-height: 920px;
+    /* max-height: 920px; */
     padding: 2rem 2.4rem 0rem 1.5rem;
     border-radius: 1.2rem;
     border: 0.1rem solid #00000080;
