@@ -34,9 +34,26 @@ const SettingsLayout = () => {
           </span>
         </li>
 
-        <li className={styles.settingsListItem} role="menuitem" tabIndex="0">
+        {/* <li className={styles.settingsListItem} role="menuitem" tabIndex="0">
           <Link href="/settings/block_and_muted" className={styles.settingsLink}>
             Blocked & Muted
+          </Link>
+          <span aria-hidden="true" className={styles.icon}>
+             <ArrowSvg />
+          </span>
+        </li> */}
+
+        <li className={styles.settingsListItem} role="menuitem" tabIndex="0">
+          <Link href="/settings/blocked" className={styles.settingsLink}>
+            Blocked Accounts
+          </Link>
+          <span aria-hidden="true" className={styles.icon}>
+             <ArrowSvg />
+          </span>
+        </li>
+        <li className={styles.settingsListItem} role="menuitem" tabIndex="0">
+          <Link href="/settings/muted" className={styles.settingsLink}>
+            Muted Accounts
           </Link>
           <span aria-hidden="true" className={styles.icon}>
              <ArrowSvg />
