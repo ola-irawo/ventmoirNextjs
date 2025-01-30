@@ -64,7 +64,7 @@ const MutedUserSetting = () => {
                   <button 
                     className={styles.unblockUserBtn} 
                   >
-                    Unblock
+                    Unmute
                   </button>
                 </div>
 
