@@ -41,6 +41,11 @@
   color: #000;
 }
 
+.settingsListItem:hover svg path {
+  fill: #000;
+  fill-opacity: 1;
+}
+
 @media (min-width: 768px) {
   .icon {
     margin-right: clamp(3rem, 3vw, 10rem);
