@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./settingsLayout.module.css";
 import Link from "next/link";
-import ArrowSvg from "../components/ArrowSvg"
+import ArrowSvg from "../components/arrowSvg/ArrowSvg"
 
 const SettingsLayout = () => {
+
   return (
     <section className={styles.settingsLayout}>
       <ul className={styles.settingsList} role="menu">

@@ -1,4 +1,4 @@
-.accountSettingsForm {
+.accountSettingsWrapper {
   max-width: 98.1rem;
   margin: 0 auto;
   padding: 1rem 1.1rem 1.7rem 1.1rem;
@@ -49,9 +49,9 @@
 }
 
 @media (min-width: 768px) {
-  /* .accountSettingsForm {
-      width: clamp(60.6rem, 60.6vw, 98.1rem);
-    } */
+  .accountSettingsWrapper {
+    margin-right: clamp(6rem, 6vw, 12.4rem);
+  }
 
   .accountSettingsHead {
     color: #000;
@@ -59,17 +59,10 @@
 
   .accountSettingsInputContainer {
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
   }
 
   .accountSettingsInput {
     width: clamp(31.4rem, 41.4vw, 54rem);
-  }
-}
-
-@media (min-width: 1028px) {
-  .accountSettingsForm {
-    width: clamp(70.6rem, 70.6vw, 98.1rem);
   }
 }

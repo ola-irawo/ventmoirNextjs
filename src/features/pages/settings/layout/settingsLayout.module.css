@@ -41,7 +41,8 @@
   color: #000;
 }
 
-.icon {
-  display: flex;
-  align-items: center;
+@media (min-width: 768px) {
+  .icon {
+    margin-right: clamp(3rem, 3vw, 10rem);
+  }
 }
