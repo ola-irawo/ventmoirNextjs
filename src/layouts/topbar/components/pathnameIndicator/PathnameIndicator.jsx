@@ -1,8 +1,7 @@
 "use client"
 import React from 'react'
 import styles from "./pathnameIndicator.module.css"
-import { usePathname } from 'next/navigation'
-import {useRouter} from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 
 const PathnameIndicator = () => {
     const pathname = usePathname()
